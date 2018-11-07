@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Урок "Формы": теги и их атрибуты</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Урок "Формы": теги и их атрибуты</h1>
+    <h2>Расскажите немного о себе...</h2>
+    <p>Попробуйте создать аналогичную форму. Для целей демонстрации вполне подойдут и вымышленные.</p>
+    <form method="get">
+        <fieldset>
+            <legend>
+                <strong>Коротко о себе</strong>
+            </legend>
+            <label for="first">Имя: </label>
+            <input type="text" id="first">
+            <br>
+            <label for="second">Фамилия: </label>
+            <input type="text" id="second">
+            <br>
+            <label>Пол:
+                <input type="radio" name="gender">
+                мужской
+            </label>
+            <label>
+                <input type="radio" name="gender">
+                женский
+            </label>
+            <br>
+            <label>
+                Возраст:
+                <input type="text">
+                лет
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>
+                <strong>Подробнее о себе</strong>
+            </legend>
+            <label>
+                <input type="radio" name="gender2">
+                Молодой человек
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="gender2">
+                Девушка
+            </label>
+            <br>
+            <label>
+                <input type="text">
+                Дата рождения
+            </label>
+            <br>
+            <label>
+                <input type="text">
+                Семейное положение
+            </label>
+            <br>
+            <label>
+                <input type="text">
+                Социальный статус
+            </label>
+            <br>
+            <label>
+                <input type="text">
+                Местожительство
+            </label>
+            <p><strong>Что вы обычно делаете на выходных:</strong></p>
+            <label>
+                <input type="checkbox">
+                Сплю
+            </label>
+            <br>
+            <label>
+                <input type="checkbox">
+                Гуляю с друзьями
+            </label>
+            <br>
+            <label>
+                <input type="checkbox">
+                Хожу на рыбалку
+            </label>
+            <br>
+            <label>
+                <input type="checkbox">
+                Играю в игры
+            </label>
+            <p><strong>Рассказать о формах в книге, посвященной HTML:</strong></p>
+            <select>
+                <option>ACTION</option>
+                <option>METHOD</option>
+                <option>ENCTYPE</option>
+            </select>
+            <p><strong>Сколько книг вы прочитали за свою жизнь:</strong></p>
+            <label>
+                <input type="radio" name="count">
+                0-10
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="count">
+                11-20
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="count">
+                21-50
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="count">
+                50+
+            </label>
+            <br>
+            <label>
+                <strong>Ваши комментарии:</strong>
+                <br>
+                <textarea rows="15" cols="80"></textarea>
+            </label>
+            <br>
+            <select size="3">
+                <option value="">Первая позиция</option>
+                <option value="">Вторая позиция</option>
+                <option value="">Третья позиция</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend><strong>И в заключении</strong></legend>
+            <input class="pole" type="text" name="field" placeholder="Это поле было введено до вас">
+            <br>
+	    	<label for="mail">E-mail</label>
+            <br>
+	    	<input class="pole" id="mail" type="email" name="username">
+            <p><strong>Хотите подписаться на самую модную рассылку спама?</strong></p>
+            <p><em>Выберите категории</em></p>
+	       	<label>
+                <input type="checkbox">
+                Оборудование
+            </label>
+            <br>
+            <label>
+	    	    <input type="checkbox">
+                Как приготовить обеды
+            </label>
+            <br>
+            <label>
+	    	    <input type="checkbox">
+                Заработай миллион за два дня!
+            </label>
+            <br>
+            <p><strong>На сколько сложная задача:</strong></p>
+            <label>
+                <input type="radio" name="hardness">
+                Совсем нет
+            </label>
+            <br>
+            <label>
+	    	    <input type="radio" name="hardness">
+                Так себе
+            </label>
+            <br>
+            <label>
+	    	    <input type="radio" name="hardness">
+                Еле справились
+            </label>
+        </fieldset>
+        <button>Отправить</button>
+    </form>
+
+    <table class="firsttab">
+		<tr>
+			<th>Об'єкт обробки</th>
+			<th>Норма витрати препарату, мл/10л</th>
+			<th>Норма витрати препарату, л/сотку</th>
+			<th>Шкідливі об'єкти</th>
+		</tr>
+		<tr>
+			<td>Картопля</td>
+			<td>60-80</td>
+			<td>до 5 л.</td>
+			<td>Однорічні дводольні та злакові бур'яни</td>
+		</tr>
+		<tr>
+			<td>Морква</td>
+			<td>40-60</td>
+			<td>до 5 л.</td>
+			<td>Однорічні дводольні та злакові бур'яни</td>
+		</tr>
+	</table>
+	<table class="secondtab">
+		<tr>
+			<th>Культура</th>
+			<th>Бур'яни</th>
+			<th>Норма витрати препарату, л/га</th>
+			<th>Строки обробки</th>
+		</tr>
+		<tr>
+			<th>Ріпак</th>
+			<td>однорічні</td>
+			<td>2-3</td>
+			<td>1 обробка в фазі 2-4 листків у бур'янів. При висоті бур'янів 10-15 см.</td>
+		</tr>
+		<tr>
+			<th>Томати</th>
+			<td rowspan="2">однорічні та багаторічні</td>
+			<td>1-2 2-3</td>
+			<td rowspan="3">1 обробка в фазі 2-4 листків у бур'янів. При висоті бур'янів 10-15 см.</td>
+		</tr>
+		<tr>
+			<th>Огірки</th>
+			<td>2-3</td>
+		</tr>
+		<tr>
+			<th>Коноплі</th>
+			<td>однорічні</td>
+			<td>1,5</td>
+		</tr>
+	</table>
+	<table class="thirdtab">
+		<tr>
+			<th class="cult">Культура</th>
+			<th class="cult">Спектр дії</th>
+			<th class="cult">Витрати</th>
+		</tr>
+		<tr>
+			<td class="cult">Буряки (столові, кормові, цукрові), морква, соняшник, картопля, капуста, ріпак, цибуля, баклажани, гарбузи, горох, дині, огірки, перець, петрушка, селера, спаржа, томати, плодові культури (вишня, груша, перси, слива, яблуня), ягадні культури (суниця, смородина)</td>
+			<td class="cult">Гумай, куряче просо, види мишію, види пальчатки, види вівсюга, метлюг звичайний, лисохвіст польовий, просто волосовидне</td>
+			<td class="cult">0,8-2,0 л/га</td>
+		</tr>
+		<tr>
+			<td class="cult">Однорічні та деякі багаторічні дводольні в т.ч. стійкі до 2,4-Д (підмаренник чіпкий, берізка польова, зірочник середній та ін.)</td>
+			<td class="cult">Пшениця озима</td>
+			<td class="cult">7,5-10</td>
+		</tr>
+		<tr>
+			<td class="cult">Поля, призначені для посіву озимих, овочевих, баштанних культур, цукрових буряків, кукурудзи, багаторічних трав. Пари, несільськогосподарські угіддя, та ін..</td>
+			<td class="cult">Багаторічні дводольні (осоти, малочаі, кульбаба, ромашка, та ін..)</td>
+			<td class="cult">30</td>
+		</tr>
+	</table>
+
+</body>
+</html>

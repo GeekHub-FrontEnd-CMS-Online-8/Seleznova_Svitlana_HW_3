@@ -1,0 +1,44 @@
+body {
+    width: 70%;
+    margin: auto;
+}
+
+p, button, lable, input {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+fieldset {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+table {
+    margin: auto;
+    width: 600px;
+}
+
+.firsttab {
+    margin: auto;
+    width: 100%;
+}
+
+.cult {
+    padding: 5px;
+    vertical-align: top;
+}
+
+.firsttab, .secondtab, .thirdtab, th, td {
+    border: 1px solid black;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.thirdtab {
+    border: 2px solid black;
+    border-collapse: collapse;
+    text-align: left;
+}
+.pole {
+    width: 300px;
+}
